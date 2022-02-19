@@ -2,73 +2,117 @@
 <html lang="en">
 
 <head>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coding Portfolio</title>
   <!-- add a reset.css file -->
-  <link rel="stylesheet" href="./assets/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link type="text/css" rel="stylesheet" href="./assets/css/materialize.css"  media="screen,projection"/>
 </head>
 
 <body>
   <section class="banner" alt="a view of a copper colored canyon with blue sky">
-    <header>Leland Byrd's Coding Portfolio</header>
-    <nav>
-      <a class ="navbar" href="#Hw1">1st Homework</a>
-      <a href="#ComingSoon2" class ="navbar">Javscript HW</a>
-      <a href="#ComingSoon3" class ="navcenter">Work Day Scheduler</a>
-      <a href="#ComingSoon4" class ="navright">Weather Dashboard</a>
-      <a href="#ComingSoon5" class ="navright">Poke Weather</a>
-    </nav>
+    <header class="container">Leland Byrd's Coding Portfolio</header>
   </section>
-  <!-- short article about me  -->
-  <article>
-    <div class="aboutme">
-      <h3>About me</h3>
-        <p>I have been an Orchestra director for the past 7 years, 
-          and I am looking to stretch my talents into Web Development.  
-          I enjoy yoga, coffee roasting, streaming Retro Games, producing music, camping, and cooking in my free time.  
-          Check out the rest of my personal website
-          <a class ="LBlink" href="https:www.LelandByrd.com" alt="A link to my personal 
-          website" target="_blank"> Here!</a>
-        </p>
+  <div class="divider"></div>
+    <!-- nav bar should include, link to github, link to linked in, link to linktree? -->
+    <nav class="nav-extended">
+      <div class="nav-wrapper customColorNav">
+        <a href="index.html" class="brand-logo"><img class="customColorNav" src="./images/Artboard 1 copy 17colOR 36.png"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger customColorNav"><i class="material-icons customColorNav">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a class="customColorNav" href="https://github.com/Byrdbass" target="_blank">Github</a></li>
+          <li><a class="customColorNav" href="https://www.linkedin.com/in/leland-byrd/" target="_blank">LinkedIn</a></li>
+          <li><a class="customColorNav" href="https://linktr.ee/byrdbass" target="_blank">Linktr.ee</a></li>
+        </ul>
       </div>
-  </article>
+      <div class="nav-content customColorNav">
+        <ul class="tabs tabs-transparent">
+          <li class="tab customColorNav"><a href="./assets/Poke-Weather/index.html" target="_blank">PokeWeather</a></li>
+          <!-- <li class="tab"><a class="active" href="#test2">Repair Revolution</a></li> -->
+          <li class="tab disabled customColorNav"><a href="#test3">Disabled Tab</a></li>
+          <li class="tab customColorNav"><a href="#test4">Test 4</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+    <ul class="sidenav" id="# mobile-demo">
+      <li><a href="https://github.com/Byrdbass">Github</a></li>
+      <li><a href="https://www.linkedin.com/in/leland-byrd/">LinkedIn</a></li>
+      <li><a href="https://linktr.ee/byrdbass">Linktr.ee</a></li>
+    </ul>
+  
+
+
+  <!-- short article about me  -->
+  <div class="divider"></div>
+  <div>
+    <div class="aboutme container">
+      <h3>About me</h3>
+      <p>Full stack web developer and multimedia programmer capitalizing on a music education background to expand
+        the versatility and intuitive nature of the web. If you want to know more about my personal interests click
+        <a class="LBlink" href="http://www.nuggatron.com" alt="A link to my personal website" target="_blank"> Here!</a>
+      </p>
+    </div>
+  </div>
   <!-- Headshot photo -->
   <div id="MQheadshot">
-    <img src="images/AISD_headshot_cropped.jpg"   class="headshot" alt="headshot of Leland Byrd smiling with glasses on">
+    <img src="images/AISD_headshot_cropped.jpg" class="headshot circle"
+      alt="headshot of Leland Byrd smiling with glasses on">
   </div>
-  <main>
-    <a href="https://byrdbass.github.io/Horiseon_Code_refactor/" target="_blank">
-      <div class="cardlink">
-        <h2>Code Refactor</h2>
-        <img id="coderefactor" src="images/01-html-css-git-homework-demo.png" alt="screenshot of the code refactor page">
+  <div class="row container main">
+    <!-- POKE WEATHER -->
+    <a href="assets\Poke-Weather\index.html" alt="Poke-Weather project link" target="_blank">
+      <div class="cardlink col">
+        <h6 id="Poke-Weather">Poke Weather Project1</h6>
+        <img id="poke-weather-img" src="./images/PokeWeather.gif" alt="placeholder image">
       </div>
     </a>
-    <div class="cardlink">
-      <h2>Password Generator</h2>
-      <img id="passGen" src="images\Password_gen_screenshot.png" alt="screenshot of the password Generator">
-    </div>
-    <div class="cardlink">
-      <h2 id="ComingSoon3">Work Day Scheduler</h2>
-      <img id="work-day-scheduler" src="./images/Work-day-scheduler-screenGif.gif" alt="placeholder image">
-    </div>
-    <div class="cardlink">
-      <h2 id="ComingSoon4">Weather Dashboard</h2>
+    <a>
+      <div class="cardlink col">
+        <h6 id="ComingSoon3">Work Day Scheduler</h6>
+        <img id="work-day-scheduler" src="./images/Work-day-scheduler-screenGif.gif" alt="placeholder image">
+      </div>
+    </a>
+    <div class="cardlink col">
+      <h6 id="ComingSoon4">Weather Dashboard</h6>
       <img id="weather-dashboard" src="./images/Weather-Dashboard-ScreenShot.gif" alt="placeholder image">
     </div>
-    <div class="cardlink">
-      <h2 id="ComingSoon5">Poke Weather Project1</h2>
-      <img id="poke-weather" src="./images/PokeWeather.gif" alt="placeholder image">
-    </div>
-    <p> You may contact me at byrdbass@gmail.com</p>
-  </main>
-<!-- CONTACT FORM SECTION -->
-  <section>
+
+    <a>
+      <div class="cardlink col">
+        <h6>Password Generator</h6>
+        <img id="passGen" src="images\Password_gen_screenshot.png" alt="screenshot of the password Generator">
+      </div>
+    </a>
+    <!-- CODE REFACTOR -->
+    <a href="https://byrdbass.github.io/Horiseon_Code_refactor/" target="_blank">
+      <div class="cardlink col">
+        <h6>Code Refactor</h6>
+        <img id="coderefactor" src="images/01-html-css-git-homework-demo.png"
+          alt="screenshot of the code refactor page">
+      </div>
+    </a>
+  </div>
+  <!-- CONTACT FORM SECTION -->
+  <section class="container">
+    <footer> You may contact me at byrdbass@gmail.com</footer>
     <div>
       <h4>Contact Form - add your information and message</h4>
-      <form>
-      <iframe class="contact_card" src="https://docs.google.com/forms/d/e/1FAIpQLSdLUGsO7Ox9m8CG_qMDYiaGCC7AoRxE4aJ8Iqgo_fWoSx-R8Q/viewform?embedded=true" width="640" height="955" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-      </form>
-  <script src= "./assets/script.js"></script>
+      <!-- <form>
+        <iframe class="contact_card"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdLUGsO7Ox9m8CG_qMDYiaGCC7AoRxE4aJ8Iqgo_fWoSx-R8Q/viewform?embedded=true"
+          width="640" height="955" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </form> -->
+      <!-- sitelock icon from 1&1 -->
+      <a href="#"
+        onclick="window.open('https://www.sitelock.com/verify.php?site=lelandbyrd.com','SiteLock','width=600,height=600,left=160,top=170');"><img
+          title="SiteLock" src="https://shield.sitelock.com/shield/lelandbyrd.com" alt="Website security"></a>
+    </section>
+      <script src="./assets/script.js"></script>
+      <script type="text/javascript" src="./assets/js/materialize.js"></script>
 </body>
+
 </html>
