@@ -87,6 +87,9 @@
         background: var(--gradientblue);
         /* margin-top: 50px; */
     }
+    .logo {
+        margin-left: 10px;
+    }
     /* different color gradient for 3rd link in nav bar */
     /* nav .navcenter {
         text-align: center;
@@ -159,8 +162,7 @@
         background: transparent;
     }
     #coderefactor {
-        width: 15em;
-        height: 17em;
+        height: 10em;
     }
     #passGen {
         width: 15em;
